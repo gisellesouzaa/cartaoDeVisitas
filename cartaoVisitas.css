@@ -1,0 +1,176 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body.blue {
+    --bg-color: #EDF2FF;
+    --text-color: #00082F;
+    --primary-color: #4263EB;
+    --primary-color-dark: #364FC7;
+}
+
+body.dark-blue {
+    --bg-color: #00082F;
+    --text-color: #FFFFFF;
+    --primary-color: #4263EB; 
+    --primary-color-dark: #364FC7;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    transition: 1s;
+ 
+}
+
+.container{
+    text-align: center;
+    width: 320px;
+    margin: 50px auto 0;
+    /* border: 1px red solid; */
+}
+
+img{
+    width: 100%;
+}
+
+img.avatar{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: solid 4px var(--primary-color);
+    padding: 3.7px;
+    transition: 400ms;
+}
+
+img.avatar:hover{
+    border: solid 4px var(--primary-color-dark);
+    padding: 0px;
+}
+
+h1{
+    font-size: 30px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.text{
+    font-family: 'Roboto Mono', monospace;
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+#ThemeBlue {
+    background-color: #8bb0f6;
+}
+
+#ThemeDarkBlue {
+    background-color: #1a2e93;
+}
+
+ul{
+    list-style: none;
+    margin: 30px 0;
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    transition: 400ms;
+}
+
+ul li a:hover {
+    background: var(--primary-color-dark);
+    box-shadow: 0.1rem 0.1rem 1rem #b01fff;
+    height: 45px;
+    
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+a i {
+    font-size: 60px;
+    color:  var(--primary-color-dark);
+    margin-bottom: 20px;
+    text-shadow: rgba(255, 255, 255, 0.561) -1px 1px 2px ;
+}
+
+a i:hover {
+    text-shadow: 0.1rem 0.1rem 1rem #b01fff;
+    font-size: 63px;
+}
+
+footer {
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.6;
+    transition: opacity 400ms;
+}
+
+
+.toggle > input {
+    display: none;
+}
+
+.toggle > label {
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 70px;
+    background: #898989;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-inline: auto;
+    font-size: 19px;
+
+
+}
+
+.toggle > label:after {
+    position: absolute;
+    left: -6px;
+    top: -3px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background: #fff;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
+    content: '';
+    transition: all 0.3s ease;
+    
+}
+
+.toggle > label:active:after {
+    transform: scale(1.15, 0.85);
+}
+.toggle > input:checked ~ label {
+    background: #6fbeb5;
+}
+.toggle > input:checked ~ label:after {
+    left: 45px;
+    background: #179588;
+}
+
+
