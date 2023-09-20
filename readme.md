@@ -1,5 +1,5 @@
 <h1 align="center">Cartão de Visitas Virtual</h1>
-<p align="center">Cartão de Visitas com os meus contatos</p>
+<p align="center">Cartão de visita digital com links direcionados para as redes sociais. O principal objetivo deste projeto foi a implementação do modo escuro (dark mode) e o aprimoramento do conteúdo relacionado ao CSS.</p>
 
 ---
 ### Tecnológias
